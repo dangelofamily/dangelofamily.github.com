@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	<head>
+		<title>D'Angelo Reunion 2018</title>
+	</head>
+	
+	<body>
+		<!-- Navbar -->
+		<div class="w3-top">
+			<div class="w3-bar w3-black w3-card">
+				<a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+				<a href="#accommodations" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Accommodations</a>
+				<a href="#gettinghere" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Getting Here</a>
+				<a href="#whoscoming" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Who's Coming?</a>
+				<a href="#friday" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Friday</a>
+				<a href="#saturday" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Saturday</a>
+				<a href="#sunday" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Sunday</a>
+				<a href="#thingstodo" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">Things to Do</a>
+			</div>
+		</div>
+		
+		<!-- Navbar on small/medium screens -->
+		<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top" style="margin-top:46px">
+			<a href="#accommodations" class="w3-bar-item w3-button w3-padding-large" onclick="collapseMenu()">Accommodations</a>
+			<a href="#gettinghere" class="w3-bar-item w3-button w3-padding-large" onclick="collapseMenu()">Getting Here</a>
+			<a href="#whoscoming" class="w3-bar-item w3-button w3-padding-large" onclick="collapseMenu()">Who's Coming?</a>
+			<a href="#friday" class="w3-bar-item w3-button w3-padding-large" onclick="collapseMenu()">Friday</a>
+			<a href="#saturday" class="w3-bar-item w3-button w3-padding-large" onclick="collapseMenu()">Saturday</a>
+			<a href="#sunday" class="w3-bar-item w3-button w3-padding-large" onclick="collapseMenu()">Sunday</a>
+			<a href="#thingstodo" class="w3-bar-item w3-button w3-padding-large" onclick="collapseMenu()">Things to Do</a>
+		</div>
+		
+		<!-- Slide Show -->
+		<section class="w3-container w3-center w3-black" style="margin-top:46px">
+			<img class="mySlides w3-center w3-content" style="display:block;" src="pictures/theo image1.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 2.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 3.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 4.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 5.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 6.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 7.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 8.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 9.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 10.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 11.jpg" height="300">
+			<img class="mySlides w3-center w3-content" style="display:none;" src="pictures/theo image 12.jpg" height="300">
+		</section>
+		
+		<!-- Title -->
+		<section class="w3-container w3-center w3-padding-64 w3-black" style="width:100%">
+			<h2 class="w3-wide">2018 D'Angelo Family Reunion Weekend</h2>
+			<h3 class="w3-wide">July 27 - July 29</h3>
+			<p id="countdown"></p>
+		</section>
+		
+		<!-- Accommodations -->
+		<section class="w3-container w3-center w3-content w3-padding-64" id="accommodations">
+			<h2 class="w3-wide">ACCOMMODATIONS</h2>
+			
+			<div id="accommodationsMap" style="width:100%;height:400px"></div>
+			
+			<h4 class="w3-opacity">1. Midfield</h4>
+			<p>130 Midfield Rd<br>Chester, VA 23236<br> 3 bedrooms, 3 full bathrooms</p>
+			<p>Master - King bed & bath<br>Guestroom - King bed & bath<br>Private Suite - Queen bed & bath</p>
+			
+			<h4 class="w3-opacity">2. <a href="https://www.airbnb.com/rooms/5020372">Rosewood</a></h4>
+			<p>2414 Rosewood Ave<br>Richmond, VA 23220<br> 4 bedrooms, 3.5 bathrooms, full basement</p>
+			<p>Guestoom 1 - King bed & bath<br>Guestroom 2 - Queen bed & bath<br>Guestroom 3 - Queen bed, shared bath<br>Guestroom 4 - Full bed, shared bath<br> Basement - 2 Full futons & bath</p>
+			
+			<h4 class="w3-opacity">3. <a href="https://www.airbnb.com/rooms/14979029">Fenton</a></h4>
+			<p>2216 Fenton St.<br>Richmond, VA 23231<br>4 bedrooms, 2 full bathrooms</p>
+			<p>Guestroom 1 - King bed, shared bath<br>Guestroom 2 - Queen bed, shared bath<br>Upstairs Room 3 - Queen bed, shared bath<br>Upstairs Room 4 - 2 Single beds, shared bath</p>
+		</section>
+		
+		<!-- Getting Here -->
+		<section class="w3-container w3-center w3-content w3-padding-64 w3-black" id="gettinghere">
+			<h2 class="w3-wide">GETTING HERE</h2>
+			
+			<div id="gettingHereMap" style="width:100%;height:400px"></div>
+			
+			<h4 class="w3-opacity" style="margin-bottom:0;">Airport:</h4>
+			<p style="margin-top:0;">1. RIC Richmond International Airport</p>
+			
+			<h4 class="w3-opacity" style="margin-bottom:0;">Amtrak:</h4>
+			<p style="margin-top:0;">2. RVM Main Street Station<br>3. RVR Staples Mill Station</p>
+			
+			<h4 class="w3-opacity" style="margin-bottom:0;">Driving:</h4>
+			<p style="margin-top:0;">I-95 Richmond</p>
+		</section>
+		
+		<!-- Who's Coming -->
+		<section class="w3-container w3-center w3-content w3-padding-64" id="whoscoming">
+			<h2 class="w3-wide">WHO'S COMING?</h2>
+			
+			<h4 class="w3-opacity">Hosts:</h4>
+			<h5>Joseph & Wendy<br>and <i>Theo</i></h5>
+			
+			<h4 class="w3-opacity">Guests:</h4>
+			<h5>Jackie<br>Mathias, Guy, Daniel</h5>
+			<h5>Rocky & Sue<br>Lynn, Kate, Jane<br>Kurt & Kelly, Abigail, Celia</h5>
+			<h5>Joe<br>Michael</h5>
+			<h5>Dan & Binia<br>Bryan, Tyler, Kyle</h5>
+			<h5>Frank & Terri<br>Melanie, Olivia</h5>
+			<h5>Dom & Heidi<br>Dominick, Sarah</h5>
+			<h5>David & Kathy<br>Kristin</h5>
+			<h5>Jim & Amy<br>Azure</h5>
+		</section>
+		
+		<!-- Friday -->
+		<section class="w3-container w3-center w3-content w3-padding-64 w3-black" id="friday">
+			<h2 class="w3-wide">FRIDAY</h2>
+			<h4>2pm</h4>
+			<h5 class="w3-opacity">Walking Tour of Carytown<br>Starting from Rosewood House</h5>
+			<h4>5pm</h4>
+			<h5 class="w3-opacity">Weekend Kick Off in the City<br>2414 Rosewood Ave, Richmond</h5>
+			<h4>7pm</h4>
+			<h5 class="w3-opacity">Dinner<br>Pizza & Salad Party</h5>
+		</section>
+		
+		<!-- Saturday -->
+		<section class="w3-container w3-center w3-content w3-padding-64 w3-black" id="saturday">
+			<h2 class="w3-wide">SATURDAY</h2>
+			<h4>7am</h4>
+			<h5 class="w3-opacity">Golfing</h5>
+			<h4>8am</h4>
+			<h5 class="w3-opacity">South of the James Farmers Market<br>Forest Hill Park<br>New Kent & 42nd St, Richmond</h5>
+			<h4>11am</h4>
+			<h5 class="w3-opacity">Reunion For Everyone<br>130 Midfield Rd<br>Chester, VA 23236</h5>
+			<h4>12pm</h4>
+			<h5 class="w3-opacity">Superbowl Recap<br>Dog & Baby Show</h5>
+		</section>
+		
+		<!-- Sunday -->
+		<section class="w3-container w3-center w3-content w3-padding-64 w3-black" id="sunday">
+			<h2 class="w3-wide">SUNDAY</h2>
+			<h4>10am</h4>
+			<h5 class="w3-opacity">Brunch</h5>
+		</section>
+		
+		<!-- Things to Do -->
+		<section class="w3-container w3-center w3-content w3-padding-64" id="thingstodo">
+			<h2 class="w3-wide">THINGS TO DO</h2>
+			<h4>Outdoors</h4>
+			<h5 class="w3-opacity">Maymont<br>Richmond Community Pools<br>Carytown Shopping<br>Byrd Park<br>Belle Isle<br>Brown's Island<br>Texas Beach</h5>
+			<h4>Indoors</h4>
+			<h5 class="w3-opacity">Virginia Museum of Fine Arts<br>Institute of Contemporary Art<br>Virginia Rep Theatre<br>Childrens Museum<br>Science Museum<br>Lamplighter Coffee</h5>
+		</section>
+		
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+			<a href="https://www.facebook.com/groups/138808096196739"><i class="fa fa-facebook-official"></i></a>
+			<p class="w3-medium">
+			Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+			</p>
+		</footer>
+		
+		<script>
+		<!-- Automatic Slideshow - change image every 3 seconds -->
+		var myIndex = 0;
+		
+		var carousel = setInterval(function() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}
+				x[myIndex-1].style.display = "block";
+		}, 3000);
+		</script>
+		
+		<script>
+		<!-- Countdown -->
+		// Set the date we're counting down to
+		var countDownDate = new Date("July 29, 2018 12:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+			// Get todays date and time
+			var now = new Date().getTime();
+		
+			// Find the distance between now an the count down date
+			var distance = countDownDate - now;
+		
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+			// Display the result in the element with id="countdown"
+			document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+		
+			// If the count down is finished, write some text 
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("countdown").innerHTML = "NOW!";
+			}
+		}, 1000);
+		</script>
+		
+		<script>
+		<!-- Show/hide menu -->
+		function myFunction() {
+			var x = document.getElementById("navDemo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		</script>
+		
+		<script>
+		<!-- Collapse menu -->
+		function collapseMenu() {
+			var x = document.getElementById("navDemo");
+			if (x.className.indexOf("w3-show") != -1) {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		</script>
+		
+		<script type="text/javascript">
+		<!-- Google Maps -->
+		function initMaps() {
+			var mapOptions = {
+				center: new google.maps.LatLng(37.5407, -77.4360),
+				zoom: 11
+			}
+			var accommodationsMap = new google.maps.Map(document.getElementById("accommodationsMap"), mapOptions);
+			var geocoder = new google.maps.Geocoder();
+			geocoder.geocode({ 'address': '130 Midfield Rd, Richmond, VA' }, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					var marker = new google.maps.Marker({
+						map: accommodationsMap,
+						position: results[0].geometry.location,
+						label: '1'
+					});
+				}
+			});
+			geocoder.geocode({ 'address': '2414 Rosewood Ave, Richmond, VA' }, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					var marker = new google.maps.Marker({
+						map: accommodationsMap,
+						position: results[0].geometry.location,
+						label: '2'
+					});
+				}
+			});
+			geocoder.geocode({ 'address': '2216 Fenton St, Richmond, VA' }, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					var marker = new google.maps.Marker({
+						map: accommodationsMap,
+						position: results[0].geometry.location,
+						label: '3'
+					});
+				}
+			});
+		
+			var gettingHereMap = new google.maps.Map(document.getElementById("gettingHereMap"), mapOptions);
+			geocoder.geocode({ 'address': 'Richmond International Airport' }, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					var marker = new google.maps.Marker({
+						map: gettingHereMap,
+						position: results[0].geometry.location,
+						label: '1'
+					});
+				}
+			});
+			geocoder.geocode({ 'address': 'RVM Main Street Station' }, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					var marker = new google.maps.Marker({
+						map: gettingHereMap,
+						position: results[0].geometry.location,
+						label: '2'
+					});
+				}
+			});
+			geocoder.geocode({ 'address': 'RVR Staples Mill Station' }, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					var marker = new google.maps.Marker({
+						map: gettingHereMap,
+						position: results[0].geometry.location,
+						label: '3'
+					});
+				}
+			});
+		}
+		</script>
+		
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqzslTyu9NAqh-Kyi33vSZXdqBYz7bUVY&callback=initMaps">
+		</script>
+		
+	</body>
+</html>
