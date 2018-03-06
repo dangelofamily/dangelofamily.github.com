@@ -56,6 +56,7 @@
 			<h2 class="w3-wide">2018 D'Angelo Family Reunion Weekend</h2>
 			<h3 class="w3-wide">July 27 - July 29</h3>
 			<p id="countdown"></p>
+			<a class="weatherwidget-io" href="https://forecast7.com/en/37d55n77d46/23220/?unit=us" data-label_1="RICHMOND" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="dark" >RICHMOND WEATHER</a>
 		</section>
 		
 		<!-- Accommodations -->
@@ -203,6 +204,18 @@
 				document.getElementById("countdown").innerHTML = "NOW!";
 			}
 		}, 1000);
+		</script>
+		
+		<script>
+		!function(d,s,id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (!d.getElementById(id)) {
+				js = d.createElement(s);
+				js.id = id;
+				js.src = 'https://weatherwidget.io/js/widget.min.js';
+				fjs.parentNode.insertBefore(js,fjs);
+			}
+		}(document,'script','weatherwidget-io-js');
 		</script>
 		
 		<script>
